@@ -13,7 +13,7 @@ if not os.path.exists(MODEL_PATH):
     gdown.download(url, MODEL_PATH, quiet=False)
 
 # Load model
-model = load_model("model.h5")
+model = load_model("model.keras")
 
 # Load face detector
 face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
