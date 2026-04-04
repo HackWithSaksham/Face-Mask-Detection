@@ -1,125 +1,205 @@
-# 😷 Face Mask Detection System
+<!-- FACE MASK README -->
 
-A deep learning-based web application that detects whether a person is wearing a face mask or not using image upload or webcam input.
+<div align="center">
 
----
+# 😷 **Face Mask Detection**
+### *Real-time Face Mask Prediction using Deep Learning*
 
-## 🚀 Features
+> A **Computer Vision model** that detects whether a person is wearing a **face mask or not** using a trained **Convolutional Neural Network (CNN)**.  
+> The system can analyze images or video frames and classify faces as **Mask** or **No Mask**.
 
-- 📷 Upload image for prediction  
-- 📸 Capture image using webcam (browser)  
-- 😀 Face detection using Haar Cascade  
-- 🧠 Mask classification using deep learning  
-- ⚡ Real-time prediction  
-- 🌐 Interactive UI built with Streamlit  
+![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-DeepLearning-orange?style=for-the-badge)
+![OpenCV](https://img.shields.io/badge/OpenCV-ComputerVision-green?style=for-the-badge)
+![Model](https://img.shields.io/badge/Model-CNN-red?style=for-the-badge)
 
----
-
-## 🧠 Model Overview
-
-<p align="center">
-  <img src="https://miro.medium.com/v2/resize:fit:1400/1*2J9Y8ZP5QkKZp0a0pXh8Mg.png" width="500"/>
-</p>
-
-- Architecture: **VGG16 (Transfer Learning)**
-- Framework: **TensorFlow / Keras**
-- Input Size: **224 × 224**
-- Output:
-  - ✅ Mask
-  - ❌ No Mask
+</div>
 
 ---
 
-## 📸 Sample Predictions
+# 🪄 About the Project
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/chandrikadeb7/Face-Mask-Detection/master/dataset/with_mask/0-with-mask.jpg" width="200"/>
-  <img src="https://raw.githubusercontent.com/chandrikadeb7/Face-Mask-Detection/master/dataset/without_mask/0.jpg" width="200"/>
-</p>
+**Face Mask Detection** is a deep learning project that predicts whether a person in an image is **wearing a mask or not**.
 
-- 🟢 Left: Mask Detected  
-- 🔴 Right: No Mask Detected  
+The model is trained using **image datasets of masked and unmasked faces** and uses **computer vision techniques** to classify faces.
+
+This project demonstrates how **AI can be used for public health monitoring**, especially in situations like **pandemic safety systems, surveillance, and automated compliance monitoring**.
 
 ---
 
-## 🛠️ Tech Stack
+# ⚡ Key Features
 
-- Python  
-- TensorFlow / Keras  
-- OpenCV  
-- Streamlit  
-- NumPy  
-- Pillow  
+| ✨ Feature | 💬 Description |
+|------------|---------------|
+| 😷 **Mask Detection** | Detects whether a face is wearing a mask or not |
+| 🧠 **Deep Learning Model** | CNN-based model trained on face images |
+| 📷 **Image Processing** | Uses OpenCV for image preprocessing |
+| ⚡ **Real-Time Prediction** | Can be integrated with webcam/video streams |
+| 🧮 **High Accuracy Model** | Trained with optimized CNN architecture |
+| 💾 **Model Serialization** | Saved using `pickle` for deployment |
+| 🧩 **Easy Deployment** | Can be integrated into Streamlit or web apps |
 
 ---
 
-## 📂 Project Structure
+# 🧰 Technologies Used
+
+<div align="center">
+
+| Layer | Technologies |
+|------|--------------|
+| 🐍 **Programming Language** | Python |
+| 📊 **Data Processing** | NumPy · Pandas |
+| 🧠 **Deep Learning** | TensorFlow · Keras |
+| 👁 **Computer Vision** | OpenCV |
+| 📈 **Model Training** | CNN Architecture |
+| 💾 **Model Storage** | Pickle |
+| 📓 **Development Environment** | Jupyter Notebook |
+
+</div>
+
+---
+
+# 🧠 Model Workflow
+
+The Face Mask Detection system follows the workflow below:
+
+1️⃣ **Dataset Collection**  
+Images of faces with and without masks are collected.
+
+2️⃣ **Image Preprocessing**
+- Resize images
+- Normalize pixel values
+- Convert images to arrays
+
+3️⃣ **Model Training**
+
+A **Convolutional Neural Network (CNN)** is trained to classify images into:
+
+- **Mask**
+- **No Mask**
+
+4️⃣ **Model Evaluation**
+
+The trained model is evaluated using validation data to measure performance.
+
+5️⃣ **Prediction**
+
+The trained model predicts whether a person is **wearing a mask or not**.
+
+---
+
+# 📁 Project Structure
+
+```bash
 Face-Mask-Detection/
 │
-├── app.py
-├── requirements.txt
-├── runtime.txt
-├── haarcascade_frontalface_default.xml
-├── README.md
-├── Procfile
-├── Face_Mask_Detection.ipynb
-├── train
-├── test
-├── outputs
-
+├── dataset/                # Training images
+│   ├── with_mask/
+│   └── without_mask/
+│
+├── model/
+│   └── model.pkl           # Trained ML model
+│
+├── face_mask_model.ipynb   # Model training notebook
+│
+├── requirements.txt        # Project dependencies
+└── README.md               # Project documentation
+```
 
 ---
 
-## ⚙️ Installation & Setup
+# 📊 Model Architecture
+
+The model uses a **Convolutional Neural Network (CNN)** consisting of:
+
+- Convolution Layers
+- MaxPooling Layers
+- Flatten Layer
+- Dense Layers
+- Output Layer (Binary Classification)
+
+The output predicts:
+
+```
+0 → No Mask
+1 → Mask
+```
+
+---
+
+# 🚀 Getting Started
 
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/your-username/Face-Mask-Detection.git
-cd Face-Mask-Detection
+git clone https://github.com/yourusername/face-mask-detection.git
+cd face-mask-detection
 ```
 
+---
+
 ### 2️⃣ Install dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
-### pip install -r requirements.txt
-``` bash
-3️⃣ Run the application
+---
+
+### 3️⃣ Run the notebook
+
+Open the notebook:
+
+```
+face_mask_model.ipynb
 ```
 
----
+Run all cells to:
 
-## 📦 Model File
-
-### ⚠️ The model file is not included in this repository due to size limitations.
-
-### 👉 The application automatically downloads the model at runtime using Google Drive.
-
----
-
-## 🌐 Deployment
-
-### This project is deployed using Render with Streamlit.
+- preprocess the dataset
+- train the CNN model
+- evaluate performance
+- save the trained model
 
 ---
 
-## 🚀 Future Improvements
+# 💾 Model Output
 
-### 🐳 Docker-based deployment
-### ☁️ Deploy on Hugging Face S
+The trained model is saved as:
+
+```
+model.pkl
+```
+
+This model can be used in:
+
+- Web applications
+- Surveillance systems
+- Real-time mask detection apps
+
+---
+
+# 📌 Future Improvements
+
+Possible improvements for the project:
+
+- 🎥 **Real-time webcam detection**
+- 🌐 **Deploy using Streamlit**
+- 📱 **Mobile app integration**
+- 🧠 **Use transfer learning (MobileNet, ResNet)**
+- ☁ **Deploy on cloud platforms**
 
 ---
 
-## 🤝 Contributing
+# 👨‍💻 Author
 
-### Contributions are welcome! Feel free to fork the repo and improve it.
+**Saksham Garg**  
+💻 Machine Learning & AI Enthusiast
 
----
+<div align="center">
 
-## 📜 License
+⭐ If you like this project, consider giving it a **star**!
 
-### This project is open-source and available under the MIT License.
+Made with ❤️ by **Saksham Garg**
 
----
+</div>
