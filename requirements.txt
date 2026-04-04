@@ -1,8 +1,9 @@
-gdown
 streamlit
-pandas==2.3.3
-numpy==2.3.5
-opencv-python-headless==4.13.0
+gdown
+opencv-python-headless
 pillow
-tensorflow==2.21.0
-keras==3.13.2
+
+numpy==1.23.5
+pandas==1.5.3
+
+tensorflow-cpu==2.13.0
