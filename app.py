@@ -9,7 +9,7 @@ from PIL import Image
 MODEL_PATH = "model.h5"
 
 if not os.path.exists(MODEL_PATH):
-    url = "https://drive.google.com/file/d/1tPOCyMnlbAJIh-8ikOeBald_1-55kw2W/view?usp=drive_link"
+    url = "https://drive.google.com/uc?id=1tPOCyMnlbAJIh-8ikOeBald_1-55kw2W"
     gdown.download(url, MODEL_PATH, quiet=False)
 
 # Load model
