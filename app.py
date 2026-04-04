@@ -6,10 +6,10 @@ import cv2
 from keras.models import load_model
 from PIL import Image
 
-MODEL_PATH = "model.h5"
+MODEL_PATH = "model.keras"
 
 if not os.path.exists(MODEL_PATH):
-    url = "https://drive.google.com/uc?id=1tPOCyMnlbAJIh-8ikOeBald_1-55kw2W"
+    url = "https://drive.google.com/uc?id=1BffJs-b6WQF7O1ry2VQp8h9Y87ZC-cJJ"
     gdown.download(url, MODEL_PATH, quiet=False)
 
 # Load model
