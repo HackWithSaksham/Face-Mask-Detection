@@ -2,8 +2,8 @@
 
 <div align="center">
 
-# 😷 **Face Mask Detection**
-### *Real-time Face Mask Prediction using Deep Learning*
+## 😷 **Face Mask Detection**
+#### *Real-time Face Mask Prediction using Deep Learning*
 
 > A **Computer Vision model** that detects whether a person is wearing a **face mask or not** using a trained **Convolutional Neural Network (CNN)**.  
 > The system can analyze images or video frames and classify faces as **Mask** or **No Mask**.
@@ -17,7 +17,7 @@
 
 ---
 
-# 🪄 About the Project
+## 🪄 About the Project
 
 **Face Mask Detection** is a deep learning project that predicts whether a person in an image is **wearing a mask or not**.
 
@@ -27,7 +27,7 @@ This project demonstrates how **AI can be used for public health monitoring**, e
 
 ---
 
-# ⚡ Key Features
+## ⚡ Key Features
 
 | ✨ Feature | 💬 Description |
 |------------|---------------|
@@ -41,7 +41,7 @@ This project demonstrates how **AI can be used for public health monitoring**, e
 
 ---
 
-# 🧰 Technologies Used
+## 🧰 Technologies Used
 
 <div align="center">
 
@@ -59,7 +59,7 @@ This project demonstrates how **AI can be used for public health monitoring**, e
 
 ---
 
-# 🧠 Model Workflow
+## 🧠 Model Workflow
 
 The Face Mask Detection system follows the workflow below:
 
@@ -88,27 +88,26 @@ The trained model predicts whether a person is **wearing a mask or not**.
 
 ---
 
-# 📁 Project Structure
+## 📁 Project Structure
 
 ```bash
 Face-Mask-Detection/
 │
-├── dataset/                # Training images
+├── dataset/
 │   ├── with_mask/
 │   └── without_mask/
 │
 ├── model/
-│   └── model.pkl           # Trained ML model
+│   └── model.pkl
 │
-├── face_mask_model.ipynb   # Model training notebook
-│
-├── requirements.txt        # Project dependencies
-└── README.md               # Project documentation
+├── face_mask_model.ipynb
+├── requirements.txt
+└── README.md
 ```
 
 ---
 
-# 📊 Model Architecture
+## 📊 Model Architecture
 
 The model uses a **Convolutional Neural Network (CNN)** consisting of:
 
@@ -127,7 +126,7 @@ The output predicts:
 
 ---
 
-# 🚀 Getting Started
+## 🚀 Getting Started
 
 ### 1️⃣ Clone the repository
 
@@ -136,34 +135,25 @@ git clone https://github.com/yourusername/face-mask-detection.git
 cd face-mask-detection
 ```
 
----
-
 ### 2️⃣ Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
 ### 3️⃣ Run the notebook
 
-Open the notebook:
+Open:
 
 ```
 face_mask_model.ipynb
 ```
 
-Run all cells to:
-
-- preprocess the dataset
-- train the CNN model
-- evaluate performance
-- save the trained model
+Run all cells to train and evaluate the model.
 
 ---
 
-# 💾 Model Output
+## 💾 Model Output
 
 The trained model is saved as:
 
@@ -171,7 +161,7 @@ The trained model is saved as:
 model.pkl
 ```
 
-This model can be used in:
+It can be used for:
 
 - Web applications
 - Surveillance systems
@@ -179,26 +169,24 @@ This model can be used in:
 
 ---
 
-# 📌 Future Improvements
+## 📌 Future Improvements
 
-Possible improvements for the project:
-
-- 🎥 **Real-time webcam detection**
-- 🌐 **Deploy using Streamlit**
-- 📱 **Mobile app integration**
-- 🧠 **Use transfer learning (MobileNet, ResNet)**
-- ☁ **Deploy on cloud platforms**
+- 🎥 Real-time webcam detection
+- 🌐 Streamlit deployment
+- 📱 Mobile integration
+- 🧠 Transfer learning (MobileNet, ResNet)
+- ☁ Cloud deployment
 
 ---
 
-# 👨‍💻 Author
+## 👨‍💻 Author
 
 **Saksham Garg**  
 💻 Machine Learning & AI Enthusiast
 
 <div align="center">
 
-⭐ If you like this project, consider giving it a **star**!
+⭐ If you like this project, give it a star!
 
 Made with ❤️ by **Saksham Garg**
 
