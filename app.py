@@ -56,7 +56,6 @@ def draw_label(img, text, pos, bg_color):
 # -------- Process Image --------
 def process_image(frame):
     # Convert PIL -> RGB -> numpy
-    frame = frame.convert("RGB")   # 🔥 CRITICAL FIX
     img = np.array(frame)
 
     gray = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
