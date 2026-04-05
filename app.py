@@ -14,7 +14,7 @@ if not os.path.exists(MODEL_PATH):
     urllib.request.urlretrieve(URL, MODEL_PATH)
 
 # Load model
-model = load_model(MODEL_PATH)
+model = load_model(MODEL_PATH,compile=False)
 
 # Load face detector
 face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
